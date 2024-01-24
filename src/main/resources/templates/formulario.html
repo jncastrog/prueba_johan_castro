@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th='http://www.thymeleaf.org'
+      xmlns='http://www.w3.org.1999/xhtml'>
+    <head>
+        <meta charset="UTF-8">
+        <title>solicitud de valores</title>
+    </head>
+    <body>
+
+        <h2>Ingrese los valores</h2>
+        <form th:action="@{/api/v1/bartender/post}" th:method="post">
+            <label for="iteraciones">Iteraciones:</label>
+            <input type="text" id="iteraciones" name="iteraciones" required>
+
+            <label for="id">Id:</label>
+            <input type="text" id="id" name="id" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+
+
+
+    </body>
+</html>
